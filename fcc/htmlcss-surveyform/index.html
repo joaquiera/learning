@@ -1,79 +1,90 @@
-<div>
-    <h1 id="title"> Survey form</h1>
-    <p id="description">All about you!!!</p>
-    </div>
+<body>
     <div>
-    <form id="survey-form">
+      <h1 id="title"> Survey form</h1>
+      <p id="description">All about you!!!</p>
+    </div>
       <div>
-      <label for="name" id="name-label">Name</label><br>
-      <input type="text" id="name" name="name" placeholder="Enter your name" required><br>
+      <form id="survey-form">
+        <div>
+        <label for="name" id="name-label">Name</label><br>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required><br>
+        </div>
+        <div>
+        <label for="email" id="email-label">Email</label><br>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required><br>
+        </div>
+        <div>
+        <label for="number" id="number-label">Pick a number</label><br>
+        <input type="number" id="number" min="0" max="99" placeholder="0-99"><br>
+        </div>
+        <div>
+        <label>Favorite season</label><br>
+        <select name="season" id="dropdown">
+          <option value="summer">Summer</option>
+          <option value="autumn">Autumn</option>
+          <option value="winter">Winter</option>
+          <option value="spring">Spring</option>
+        </select><br>
+        </div>
+        <div>
+          <p class="radio-group">Gender</p>
+          <label for ="male">
+            <input type="radio" name="gender" id="male" value="male">Male
+          </label>
+          <label for ="female">
+            <input type="radio" name="gender" id="female" value="female">Female
+          </label>
+          <label for="other">
+            <input type="radio" name="gender" id="other" value="other">Other
+          </label><br>
+          <label for="prefer-not-to-say">
+            <input type="radio" name="gender" id="prefer-not-to-say" value="prefer-not-to-say">Prefer not to say
+          </label>
+          <p class="radio-group">Dominant hand</p>
+          <label for="left">
+            <input type="radio" name="dominant-hand" id="left" value="left">Left
+          </label>
+          <label for="right">
+            <input type="radio" name="dominant-hand" id="right" value="right">Right
+          </label>
+          <label for="ambidextrous">
+            <input type="radio" name="dominant-hand" id="ambidextrous" value="ambidextrous">Ambidextrous
+          </label><br>
+          <label for="prefer-not-to-say">
+            <input type="radio" name="dominant-hand" id="prefer-not-to-say" value="prefer-not-to-say">Prefer not to say
+          </label>
+        </div><br>
+        <div>
+          <p class="checkbox-group">Games you played (check all that apply)</p>
+          <label for="dota2">
+            <input type="checkbox" id="dota2" value="dota2" name="games-played">Dota2
+          </label>
+          <label for="mhw">
+            <input type="checkbox" id="mhw" value="mhw" name="games-played">MHW
+          </label>
+          <label for="r6-siege">
+            <input type="checkbox" id="r6-siege" value="r6-siege" name="games-played">R6 Siege
+          </label>
+          <label for="fortnite">
+            <input type="checkbox" id="fortnite" value="fortnite" name="games-played">Fortnite
+          </label>
+          <label for="pubg">
+            <input type="checkbox" id="pubg" value="pubg" name="games-played">PUBG
+          </label>
+          <label for="cod">
+            <input type="checkbox" id="cod" value="pubg"  name="games-played">COD
+          </label><br>
+        </div>
+        <div>
+          <label for="comment">Comment</label><br>
+          <textarea id="comment" name="comment" placeholder="Any comments/suggestions..."></textarea>
+        </div>
+        <div>
+          <label for="submit">
+            <input type="submit" id="submit">
+          </label>
+        </div>
+        </form>
       </div>
-      <div>
-      <label for="email" id="email-label">Email</label><br>
-      <input type="email" id="email" name="email" placeholder="Enter your email" required><br>
-      </div>
-      <div>
-      <label for="number" id="number-label">Pick a number</label><br>
-      <input type="number" id="number" min="0" max="99" placeholder="0-99"><br>
-      </div>
-      <div>
-      <label>Favorite season</label><br>
-      <select name="season" id="dropdown">
-        <option value="summer">Summer</option>
-        <option value="autumn">Autumn</option>
-        <option value="winter">Winter</option>
-        <option value="spring">Spring</option>
-      </select><br>
-      </div>
-      <div>
-        <p class="radio-group">Gender</p>
-        <label for ="male">
-          <input type="radio" name="gender" id="male" value="male">Male
-        </label>
-        <label for ="female">
-          <input type="radio" name="gender" id="female" value="female">Female
-        </label>
-        <label for="other">
-          <input type="radio" name="gender" id="other" value="other">Other
-        </label><br>
-        <label for="prefer-not-to-say">
-          <input type="radio" name="gender" id="prefer-not-to-say" value="prefer-not-to-say">Prefer not to say
-        </label>
-        <p class="radio-group">Dominant hand</p>
-        <label for="left">
-          <input type="radio" name="dominant-hand" id="left" value="left">Left
-        </label>
-        <label for="right">
-          <input type="radio" name="dominant-hand" id="right" value="right">Right
-        </label>
-        <label for="ambidextrous">
-          <input type="radio" name="dominant-hand" id="ambidextrous" value="ambidextrous">Ambidextrous
-        </label><br>
-        <label for="prefer-not-to-say">
-          <input type="radio" name="dominant-hand" id="prefer-not-to-say" value="prefer-not-to-say">Prefer not to say
-        </label>
-      </div><br>
-      <div>
-        <p class="checkbox-group">Games you played (check all that apply)</p>
-        <label for="dota2">
-          <input type="checkbox" id="dota2" value="dota2" name="games-played">Dota2
-        </label>
-        <label for="mhw">
-          <input type="checkbox" id="mhw" value="mhw" name="games-played">MHW
-        </label>
-        <label for="r6-siege">
-          <input type="checkbox" id="r6-siege" value="r6-siege" name="games-played">R6 Siege
-        </label>
-        <label for="fortnite">
-          <input type="checkbox" id="fortnite" value="fortnite" name="games-played">Fortnite
-        </label>
-        <label for="pubg">
-          <input type="checkbox" id="pubg" value="pubg" name="games-played">PUBG
-        </label>
-        <label for="cod">
-          <input type="checkbox" id="cod" value="pubg"  name="games-played">COD
-        </label><br>
-      </div>
-      <div>
-        <label for="comment">Comment</label><br>
-        <textarea id="comment" name="comment" placeholder="Any comments/suggestions..."></textarea>
+</body>
+    
