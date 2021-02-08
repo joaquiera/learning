@@ -1,0 +1,27 @@
+body {
+    background: linear-gradient(to right top, #b8e2f2, #77c3ec);
+    text-align: center;
+
+}
+.circle1,
+.circle2 {
+    background: white;
+    background: linear-gradient(to right bottom,
+     rgba(255,255,255,.5),
+     rgba(255,255,255,.1));
+     border-radius: 50%;
+     position: absolute;
+     height: 20rem;
+     width: 20rem;
+
+}
+
+.circle1 {
+    top: 5%;
+    left: 10%;
+
+}
+.circle2 {
+    right: 5%;
+    bottom: 10%;
+}
